@@ -1,15 +1,34 @@
-var dice1 = Math.floor(Math.random() * 6) + 1;
-var dice2 = Math.floor(Math.random() * 6) + 1;
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
 
-document.querySelector("img.img1").setAttribute('src', 'images/dice' + dice1 + '.png');
-document.querySelector("img.img2").setAttribute('src', 'images/dice' + dice2 + '.png');
+  </head>
+  <body>
 
-if (dice1 > dice2) {
-	document.querySelector("h1").innerHTML = "player 1st wins !!";
-}
-else if (dice1 < dice2) {
-	document.querySelector("h1").innerHTML = "player 2nd wins !!";
-}
-else {
-	document.querySelector("h1").innerHTML = "Draw Both players wins !!";
-}
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="images/dice6.png">
+      </div>
+
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+
+      </body>
+
+      <footer>
+        www 🎲 App Brewery 🎲 com
+      </footer>
+    </html>
